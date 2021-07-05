@@ -1,0 +1,10 @@
+is_mrc
+gag_lrtt
+pol_lrtt
+gp120_lrtt
+gag_maf3c
+gp41_maf3c
+gp41_maf12c
+gag_tips
+gp41_tips
+gp120_tips
