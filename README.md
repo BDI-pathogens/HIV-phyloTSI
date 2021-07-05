@@ -1,5 +1,15 @@
 # HIV-phyloTSI
-Estimate time since infection (TSI) from HIV deep-sequencing data. Amplicon-based and capture-based sequencing are supported. This code requires sequencing reads for each sample to be mapped using shiver (https://github.com/ChrisHIV/shiver/), and the resulting BAM files batched and processed by phyloscanner (https://github.com/BDI-pathogens/phyloscanner).
+Estimate time since infection (TSI) from HIV deep-sequencing data. Amplicon-based and capture-based sequencing are supported. This code requires sequencing reads for each sample to be mapped using [shiver](https://github.com/ChrisHIV/shiver/ "shiver"), and the resulting BAM files batched and processed by [phyloscanner](https://github.com/BDI-pathogens/phyloscanner "phyloscanner"). We recommend batching 5-100 samples per phyloscanner run to avoid excessive runtimes for large datasets, and using the GTR+F+R6 (FreeRate) substitution model. Example input files are provided in ExampleInputs.
+
+_Installation using conda:_
+1. Clone this repository and cd to its location: `git clone git@github.com:BDI-pathogens/HIV-phyloTSI.git; cd HIV-phyloTSI`
+2. Create the conda environment: `conda env create -f hivphylotsi.yml`
+3. Activate it: `conda activate hivphylosti`
+    * Alternatively, you can manually install the requirements: python3, pandas v0.25.3 and scikit-learn v0.22.
+4. Test run using example input data:
+`./HIVPhyloTSI.py -d Model -p ExampleInputs/testpatstats.csv -m ExampleInputs/testmaf.csv -o test.csv`
+
+A csv file `test.csv` is created with TSI estimates for data in ExampleInputs/. The input and output data are described in more detail below.
 
 _Input:_
 
