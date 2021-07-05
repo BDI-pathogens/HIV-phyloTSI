@@ -1,0 +1,37 @@
+name: hivphylotsi
+channels:
+  - defaults
+dependencies:
+  - blas=1.0=mkl
+  - ca-certificates=2021.5.25=hecd8cb5_1
+  - certifi=2021.5.30=py36hecd8cb5_0
+  - intel-openmp=2021.2.0=hecd8cb5_564
+  - joblib=1.0.1=pyhd3eb1b0_0
+  - libcxx=10.0.0=1
+  - libffi=3.3=hb1e8313_2
+  - libgfortran=3.0.1=h93005f0_2
+  - llvm-openmp=10.0.0=h28b9765_0
+  - mkl=2019.4=233
+  - mkl-service=2.3.0=py36h9ed2024_0
+  - mkl_fft=1.3.0=py36ha059aab_0
+  - mkl_random=1.1.1=py36h959d312_0
+  - ncurses=6.2=h0a44026_1
+  - numpy=1.17.0=py36hacdab7b_0
+  - numpy-base=1.17.0=py36h6575580_0
+  - openssl=1.1.1k=h9ed2024_0
+  - pandas=0.25.3=py36h0a44026_0
+  - pip=21.1.2=py36hecd8cb5_0
+  - python=3.6.13=h88f2d9e_0
+  - python-dateutil=2.8.1=pyhd3eb1b0_0
+  - pytz=2021.1=pyhd3eb1b0_0
+  - readline=8.1=h9ed2024_0
+  - scikit-learn=0.22=py36h27c97d8_0
+  - scipy=1.5.2=py36h912ce22_0
+  - setuptools=52.0.0=py36hecd8cb5_0
+  - six=1.16.0=pyhd3eb1b0_0
+  - sqlite=3.35.4=hce871da_0
+  - tk=8.6.10=hb0a8c7a_0
+  - wheel=0.36.2=pyhd3eb1b0_0
+  - xz=5.2.5=h1de35cc_0
+  - zlib=1.2.11=h1de35cc_3
+
