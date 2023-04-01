@@ -17,7 +17,7 @@ Two CSV files:
 1. **PatStats:** patStats.csv from phyloscanner, where host.id refers to individual samples (do not merge multiple timepoints); and
 2. **MAF:** a csv file of minor allele frequencies (MAF), where rows match the host.id values in your **PatStats** file, and columns are labelled by position relative to HXB2. MAF is calculated from the shiver BaseFreqs_WithHXB2.csv, or from any pileup of reads, at each HXB2 position as follows:
 
-            MAF = (1-(A+C+G+T))/(A+C+G+T)
+            MAF = (1-max(A+C+G+T))/(A+C+G+T)
 
 where A, C, G and T are counts of each base (ignoring gaps and Ns).
 
