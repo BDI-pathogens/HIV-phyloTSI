@@ -147,7 +147,7 @@ def load_patstats(fpath):
 def load_maf(fpath):
     ''' Load shiver output processed to give cumumative minor allele frequencies. '''
     Xmaf = pd.read_csv(fpath, index_col=0)
-    Xmaf.columns = [int(c) for c in Xmaf.columns]
+    Xmaf.columns = [int(float(c)) for c in Xmaf.columns]
     loginfo('Loaded MAF data, shape={}'.format(Xmaf.shape))
     return Xmaf
 
